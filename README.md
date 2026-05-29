@@ -120,6 +120,19 @@ Arduino IDE 直接打开 [CyberMonitor](/Users/bizi/Desktop/GitHub/ESP32-Prometh
 4. [Prometheus 部署方案](docs/Prometheus-deployment.md)
 5. [Metrics Mapping](docs/metrics-mapping.md)
 6. [测试计划](docs/test-plan.md)
+7. [Prometheus 联调准备与排查指南](docs/prometheus-debug-guide.md)
+
+## 联调脚本
+
+仓库内提供两个联调辅助脚本：
+
+1. [check_exporter_metrics.sh](/Users/bizi/Desktop/GitHub/ESP32-Prometheus-PC-Monitor/tools/check_exporter_metrics.sh)
+2. [check_prometheus_queries.sh](/Users/bizi/Desktop/GitHub/ESP32-Prometheus-PC-Monitor/tools/check_prometheus_queries.sh)
+
+推荐顺序：
+
+1. 先检查 `windows_exporter` 原始 metric 是否存在
+2. 再检查 Prometheus 侧 8 路真实查询是否都能返回结果
 
 ## 当前交付范围
 
